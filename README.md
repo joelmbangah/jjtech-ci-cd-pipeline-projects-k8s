@@ -235,6 +235,11 @@ Once both the above steps are done click on Save.
 
 - sudo ./aws/install --update
 
+### Terraform
+-modify provider.tf
+-bucketname
+-dynamodb table
+
 ### Modify values in jenkinsfile
 - update values in stage "Build and Push Docker Image" with account ID, Repository name, region, 
 
