@@ -228,9 +228,17 @@ Once both the above steps are done click on Save.
 ### Update aws cli to version 2
 - ssh into jenkins server and query version of aws cli by running "aws --version", if version 1, update with below commands
 - curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+- ls
+- sudo -i
+- cd /home/ec2-user
 - unzip awscliv2.zip
 
 - sudo ./aws/install --update
+
+### Terraform
+-modify provider.tf
+-bucketname
+-dynamodb table
 
 ### Modify values in jenkinsfile
 - update values in stage "Build and Push Docker Image" with account ID, Repository name, region, 
